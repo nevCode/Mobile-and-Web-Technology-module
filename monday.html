@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background: linear-gradient(to bottom, #FFFFDB 0%, #ffffff 100%);
+  height: 500px;
+  color: black;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #8c7373;
+  color: black;
+}
+
+.active {
+  background-color: black;
+  color: white;
+}
+.table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active">NutrishApp</a>
+  <div id="myLinks">
+    <li><a href="index.html">NUTRITION</a></li>
+	<li><a href="statistics.html">STATISTICS</a></li>
+	<li><a href="benefitsofhealthyeating.html"> BENEFITS OF HEALTHY EATING</a></li>
+	<li><a href="affordablemeals.html">AFFORDABLE MEALS</a></li>
+			<ul>
+				<li><a href="sunday.html">Sunday</a></li>
+				<li><a href="monday.html">Monday</a></li>
+				<li><a href="tuesday.html">Tuesday</a></li> 
+				<li><a href="wednesday.html">Wednesday</a></li>
+				<li><a href="thursday.html">Thursday</a></li>
+				<li><a href="friday.html">Friday</a></li> 
+				<li><a href="saturday.html">Saturday</a></li> 
+			</ul>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px">
+  <h3>Affordable meals</h3>
+  <center>7 days of healthy Nutritious meals to serve 1-4 people</center>
+  <p>MONDAY</p>
+  <p>Sweetcorn egg-fried rice with chicken, cost per serving - 40p</p>
+  <p>Make use of leftovers</p>
+  <p>You can utilise Sunday’s leftovers roast chicken and create this little effort quick meal. Add veggies such as sweetcorn, add curry, soy sauce and ketchup at the end of the cooking. Chicken is a great source of the amino acid, tryptophan. Eating chicken in the evening would aid in raising serotonin levels and help promote a good night’s sleep.</p>
+  <p>By adding egg to this meal it boosts its protein contribution and it also provides vitamin D.</p>
+
+  <table>
+  <tr>
+    <th colspan="2">Recipe</th>
+  </tr>
+  <tr>
+    <td>sunflower oil</td>
+    <td>1 tbsp</td>
+  </tr>
+  <tr>
+    <td>beaten with some seasoning</td>
+    <td>3 eggs</td>
+  </tr>
+  <tr>
+    <td>mixed stir fry vegetable</td>
+    <td>320g pack</td>
+  </tr>
+  <tr>
+    <td>mild curry powder</td>
+    <td>1 tbsp</td>
+  </tr>
+  <tr>
+    <td>frozen sweetcorn</td>
+    <td>140g</td>
+  </tr>
+  <tr>
+    <td>cooked rice</td>
+    <td>600g</td>
+  </tr>
+  <tr>
+    <td>roasted chicken breast, finely shredded</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>low salt soy sauce</td>
+    <td>2 tbsp</td>
+  </tr>
+  <tr>
+    <td>sweet chilli sauce</td>
+    <td>2 tbsp</td>
+  </tr>
+  <tr>
+    <td>ketchup</td>
+    <td>2 tbsp</td>
+  </tr>
+ 
+</table>
+<img src="monday.jpg" alt="NutrishApp3" width="240" height="200">
+
+<center>Cooking method</center>
+  
+  <p>1.	Heat a splash of oil in a large frying pan and tip in the beaten eggs. Swirl the pan to coat in a thin layer of egg and cook for a few mins until set. Tip onto a chopping board, roll up, slice thinly and set aside.</p>
+  <p>2.	Heat a little more oil, add the stir-fry veg, curry powder and sweetcorn with a splash of water. Cook for 1-2 mins until the veg starts to wilt, then tip into a bowl. Add the last of the oil to the pan, tip in the rice and chicken, mix well, then add the soy sauce, sweet chilli, ketchup, a splash of water and some black pepper.</p>
+  <p>3.	Finally, add the eggs and the veg, toss together and heat through until hot. Tip into bowls and serve immediately.</p>
+  <p></p>
+</div>
+
+<!-- End smartphone / tablet look -->
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>

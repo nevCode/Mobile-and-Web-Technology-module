@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background: linear-gradient(to bottom, #FFFFDB 0%, #ffffff 100%);
+  height: 500px;
+  color: black;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #8c7373;
+  color: black;
+}
+
+.active {
+  background-color: black;
+  color: white;
+}
+.table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active">NutrishApp</a>
+  <div id="myLinks">
+    <li><a href="index.html">NUTRITION</a></li>
+	<li><a href="statistics.html">STATISTICS</a></li>
+	<li><a href="benefitsofhealthyeating.html"> BENEFITS OF HEALTHY EATING</a></li>
+	<li><a href="affordablemeals.html">AFFORDABLE MEALS</a></li>
+			<ul>
+				<li><a href="sunday.html">Sunday</a></li>
+				<li><a href="monday.html">Monday</a></li>
+				<li><a href="tuesday.html">Tuesday</a></li> 
+				<li><a href="wednesday.html">Wednesday</a></li>
+				<li><a href="thursday.html">Thursday</a></li>
+				<li><a href="friday.html">Friday</a></li> 
+				<li><a href="saturday.html">Saturday</a></li> 
+			</ul>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px">
+  <h3>Affordable meals</h3>
+  <center>7 days of healthy Nutritious meals to serve 1-4 people</center>
+  <p>SATURDAY</p>
+  <p>Turkey burgers, cost per serving - £1.15</p>
+  <p>Dried apricots are used in the burgers this may be unconventional, but they keep the burgers succulent and moist and they pack extra flavour. Turkey is a lean meat as well as it is immune friendly, it supplies selenium and all the B groups for vitamins.</p>
+  
+  <table>
+  <tr>
+    <th colspan="2">Recipe</th>
+  </tr>
+  <tr>
+    <td>olive oil</td>
+    <td>2 tbsp</td>
+  </tr>
+  <tr>
+    <td>large onion, finely chopped</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>crushed, garlic cloves</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>porridge oats</td>
+    <td>85g</td>
+  </tr>
+  <tr>
+    <td>dried breadcrumbs</td>
+    <td>450g/1lb</td>
+  </tr>
+  <tr>
+    <td>dried apricot,finely chopped</td>
+    <td>100g</td>
+  </tr>
+  <tr>
+    <td>grated, large carrot</td>
+    <td>1</td>
+  </tr>
+  <tr>
+  <td>beaten, egg</td>
+  <td>1</td>
+  </tr>
+  <tr>
+  <td>rolls and cucumber slices, to serve</td>
+  <td>sufficient</td>
+  </tr>
+</table>
+<img src="saturday.png" alt="NutrishApp3" width="240" height="200">
+
+<center>Cooking method</center>
+  
+  <p>1.	Heat 1 tbsp oil in a pan and gently fry the onion for 5 mins until soft. Add the garlic and cook for 1 min. Add the oats and fry for 2 mins more. Tip into a bowl and set aside to cool.</p>
+  <p>2.	Add the rest of the ingredients to the cooled mixture and mix well with your hands. Season to taste and shape into 8 patties.</p>
+  <p>3.	Heat oven to 200C/fan 180C/gas 6. Heat the remaining olive oil in a large, non-stick frying pan and sear the burgers on each side until well coloured (3-4 mins). Transfer to a baking sheet and cook in the oven for 10-15 mins. Serve in rolls with Tangy tomato chutney (see 'goes well with') and cucumber slices.</p>
+  <p>4.	For the chutney heat 1 tbsp of olive oil in a pan and add 1 finely chopped onion. Cook for 5 mins until softened. Stir in 1 crushed garlic clove and cook for a further min. Add 1 tbsp sundried tomato paste, a 400g can good-quality chopped tomatoes and a pinch of sugar. Gently cook for 20-25 mins until rich and thick. Season to taste, then leave to cool before serving.</p>
+</div>
+
+<!-- End smartphone / tablet look -->
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background: linear-gradient(to bottom, #FFFFDB 0%, #ffffff 100%);
+  height: 500px;
+  color: black;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #8c7373;
+  color: black;
+}
+
+.active {
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active">NutrishApp</a>
+  <div id="myLinks">
+    <li><a href="index.html">NUTRITION</a></li>
+	<li><a href="statistics.html">STATISTICS</a></li>
+	<li><a href="benefitsofhealthyeating.html"> BENEFITS OF HEALTHY EATING</a></li>
+	<li><a href="affordablemeals.html">AFFORDABLE MEALS</a></li>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px">
+  <h3>Nutrition</h3>
+  <center>What is Nutrition?</center>
+  <p>This is the process that requires the intake of food and using it for a persons growth repair and their metabolism. With Nutrition there are stages which are; ingestion, digestion, absorption, transport assimilation and finally the excretion.</p>
+  <center>There are 7 major classes for Nutrients and they are;</center>
+  <p>Carbohydrates – This is Humans main source of energy.</p>
+  <p>Minerals – This is inorganic elements that occur in a body and are very critical to it functioning normally.</p>
+  <p>Fibre – Also referred to as roughage it is the fibrous indigestible part of a diet that is essential to health of the digestive system.</p>
+  <p>Fats – This is a source of energy; the body utilises fat as a fuel resource and it is the main storage form of energy in humans.</p>
+  <p>Water – In order to have normal body function water is essential in everyday life, more than 50% of the human body compromises of water and it operates as a vehicle for distributing other nutrients around the body.</p>
+  <p>Vitamins – These allow your body to function and develop properly as it should. Vitamins are nutrients humans need to help fight off diseases. Humans cannot produce vitamins themselves, so it is sourced through food that is eaten or supplements. There are 13 essential vitamins: A,D,E and K are fat-soluble and vitamins C and the B-complex group are water soluble</p>
+  <p>Protein – This Nutrient is key for essential growth and repair of muscle and other body tissues.</p>
+  </div>
+
+<!-- End smartphone / tablet look -->
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>

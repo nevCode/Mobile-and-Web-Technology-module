@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background: linear-gradient(to bottom, #FFFFDB 0%, #ffffff 100%);
+  height: 500px;
+  color: black;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #8c7373;
+  color: black;
+}
+
+.active {
+  background-color: black;
+  color: white;
+}
+.table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active">NutrishApp</a>
+  <div id="myLinks">
+    <li><a href="index.html">NUTRITION</a></li>
+	<li><a href="statistics.html">STATISTICS</a></li>
+	<li><a href="benefitsofhealthyeating.html"> BENEFITS OF HEALTHY EATING</a></li>
+	<li><a href="affordablemeals.html">AFFORDABLE MEALS</a></li>
+			<ul>
+				<li><a href="sunday.html">Sunday</a></li>
+				<li><a href="monday.html">Monday</a></li>
+				<li><a href="tuesday.html">Tuesday</a></li> 
+				<li><a href="wednesday.html">Wednesday</a></li>
+				<li><a href="thursday.html">Thursday</a></li>
+				<li><a href="friday.html">Friday</a></li> 
+				<li><a href="saturday.html">Saturday</a></li> 
+			</ul>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px">
+  <h3>Affordable meals</h3>
+  <center>7 days of healthy Nutritious meals to serve 1-4 people</center>
+  <p>SUNDAY</p>
+  <p>One-pan roast chicken & potatoes,
+Cost per serving - £1.65</p>
+  <p>Who doesn’t love a chicken meal?</p>
+  <p>Chicken is a family favourite and a great nutritional option because it is white meat and when compared to red meat it is lower in fat. Chicken is a great source of the nutrient protein. Potatoes are a great source of the vitamin C.</p>
+  <table>
+  <tr>
+    <th colspan="2">Recipe</th>
+  </tr>
+  <tr>
+    <td>medium chicken</td>
+    <td>1½ kg </td>
+  </tr>
+  <tr>
+    <td>lemons halved</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>rosemary sprigs</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>onions quartered</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>garlic cloves</td>
+    <td>9</td>
+  </tr>
+  <tr>
+    <td>thyme leaves chopped</td>
+    <td>1 tbsp</td>
+  </tr>
+  <tr>
+    <td>olive oil</td>
+    <td>2 tbsp</td>
+  </tr>
+  <tr>
+    <td>baby new potatoes, halved</td>
+    <td>500g</td>
+  </tr>
+  <tr>
+    <td>lemon thyme sprigs</td>
+    <td>3</td>
+  </tr>
+ 
+</table>
+<img src="sunday.jpg" alt="NutrishApp3" width="240" height="200">
+
+<center>Cooking method</center>
+  <p>1.	Heat oven to 190C/170C fan/gas 5. Stuff the chicken cavity with 2 lemon halves, 2 rosemary sprigs, 4 onion quarters and some seasoning. Put the chicken into a large roasting tray.</p>
+  <p>2.	Crush 3 garlic cloves, then add to a small bowl with the thyme leaves and olive oil, mix, then rub this all over the chicken with some seasoning.</p>
+  <p>3.	Arrange the potatoes around the chicken with the rest of the lemons and onions, rosemary and whole garlic cloves, and lemon thyme. Cook in the oven for 1 hr 20 mins, turning the potatoes in the pan once or twice. To check if the chicken is cooked, pierce the thigh with a skewer and the juices should run clear.</p>
+  <p>4.	Remove the chicken from the tray and place on a serving dish or board to rest for 15-20 mins. As you lift the chicken, let any juices pour back into the tray. Increase oven temperature to 200C/ 180C fan/gas 6 and cook the potatoes for a further 10-15 mins or until tender.</p>
+  <p>5.	If you want gravy, use a slotted spoon to remove the potatoes from the tray to a serving bowl, then use a potato masher to mash all the juices, lemons, herbs and garlic together in the roasting tray, adding a splash of water if it’s too pulpy. Push this mix through a sieve, taste the gravy and add some more seasoning if you need to. Bring everything into the garden so everyone can help themselves.</p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+</div>
+
+<!-- End smartphone / tablet look -->
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background: linear-gradient(to bottom, #FFFFDB 0%, #ffffff 100%);
+  height: 500px;
+  color: black;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #8c7373;
+  color: black;
+}
+
+.active {
+  background-color: black;
+  color: white;
+}
+.table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active">NutrishApp</a>
+  <div id="myLinks">
+    <li><a href="index.html">NUTRITION</a></li>
+	<li><a href="statistics.html">STATISTICS</a></li>
+	<li><a href="benefitsofhealthyeating.html"> BENEFITS OF HEALTHY EATING</a></li>
+	<li><a href="affordablemeals.html">AFFORDABLE MEALS</a></li>
+			<ul>
+				<li><a href="sunday.html">Sunday</a></li>
+				<li><a href="monday.html">Monday</a></li>
+				<li><a href="tuesday.html">Tuesday</a></li> 
+				<li><a href="wednesday.html">Wednesday</a></li>
+				<li><a href="thursday.html">Thursday</a></li>
+				<li><a href="friday.html">Friday</a></li> 
+				<li><a href="saturday.html">Saturday</a></li> 
+			</ul>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px">
+  <h3>Affordable meals</h3>
+  <center>7 days of healthy Nutritious meals to serve 1-4 people</center>
+  <p>TUESDAY</p>
+  <p>Pink fishballs in spicy lentil gravy, cost per serving - £1.65</p>
+  <p>It is recommended that humans consume 2 portions of fish per week. Oily fish such as Salmon, mackerel, sardines and trout are rich in a special type of fat which is called omega-3. These fats are essential for humans’ bodies because they cannot produce them hence why they are called essential fats. These fats are needed for humans’ brains to work properly also to balance hormones.</p>
+  <p>Lentils are a great to obtain the mineral Iron. It helps to energise brains and it improves concentration and alertness.</p>
+  <table>
+  <tr>
+    <th colspan="2">Recipe</th>
+  </tr>
+  <tr>
+    <td>medium slices of white bread</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>salmon fillet, cut into rough chunks</td>
+    <td>450</td>
+  </tr>
+  <tr>
+    <td>egg white</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>olive oil</td>
+    <td>1 tbsp</td>
+  </tr>
+  <tr>
+    <td>korma curry paste</td>
+    <td>2 tbsp</td>
+  </tr>
+  <tr>
+    <td>small onion, finely chopped</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>red peppers, finely chopped</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>500g carton tomato passata</td>
+    <td>500g</td>
+  </tr>
+  <tr>
+    <td>red lentils</td>
+    <td>50 g</td>
+  </tr>
+</table>
+<img src="tuesday.png" alt="NutrishApp3" width="240" height="200">
+
+<center>Cooking method</center>
+  
+  <p>1.	In a food processor, whizz the bread to fine crumbs. Set aside, then whizz the salmon. Add the crumbs and egg white, then pulse to combine. Season. Divide into 12 balls and chill for 30 mins. Can be frozen at this stage for up to 1 month.</p>
+  <p>2.	Heat oven to 200C/fan 180C/gas 6. Heat the oil in a non-stick frying pan. Add the fishballs and fry for 1-2 mins until lightly browned. Transfer to a baking tray, bake for 15 mins until golden.</p>
+  <p>3.	Wipe the pan, add korma paste and onion, and cook for 5 mins, stirring regularly. Add peppers and cook for 2 mins. Add passata and lentils, bring to the boil, then simmer for 20 mins. Coat fishballs in the gravy and serve.</p>
+  <p></p>
+</div>
+
+<!-- End smartphone / tablet look -->
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>

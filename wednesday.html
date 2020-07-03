@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background: linear-gradient(to bottom, #FFFFDB 0%, #ffffff 100%);
+  height: 500px;
+  color: black;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #8c7373;
+  color: black;
+}
+
+.active {
+  background-color: black;
+  color: white;
+}
+.table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active">NutrishApp</a>
+  <div id="myLinks">
+    <li><a href="index.html">NUTRITION</a></li>
+	<li><a href="statistics.html">STATISTICS</a></li>
+	<li><a href="benefitsofhealthyeating.html"> BENEFITS OF HEALTHY EATING</a></li>
+	<li><a href="affordablemeals.html">AFFORDABLE MEALS</a></li>
+			<ul>
+				<li><a href="sunday.html">Sunday</a></li>
+				<li><a href="monday.html">Monday</a></li>
+				<li><a href="tuesday.html">Tuesday</a></li> 
+				<li><a href="wednesday.html">Wednesday</a></li>
+				<li><a href="thursday.html">Thursday</a></li>
+				<li><a href="friday.html">Friday</a></li> 
+				<li><a href="saturday.html">Saturday</a></li> 
+			</ul>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px">
+  <h3>Affordable meals</h3>
+  <center>7 days of healthy Nutritious meals to serve 1-4 people</center>
+  <p>WEDNESDAY</p>
+  <p>Bolognese, cost per serving - £1</p>
+  <p>This meal is filled with veggies and a bit of beef. Beef is rich in the minerals iron and zinc. These are needed for both growth and repair. The zinc would keep us healthy by allowing our immune systems to function well and it promotes the healing of bruises and cuts. With Iron it aids providing you with energy.</p>
+  <p></p>
+  <table>
+  <tr>
+    <th colspan="2">Recipe</th>
+  </tr>
+  <tr>
+    <td>olive oil</td>
+    <td>2 tsp</td>
+  </tr>
+  <tr>
+    <td>onion, chopped</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>carrots, chopped</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>courgettes, chopped</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>button mushrooms</td>
+    <td>85g</td>
+  </tr>
+  <tr>
+    <td>garlic clove, crushed</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>canned chopped tomatoes</td>
+    <td>400g</td>
+  </tr>
+  <tr>
+    <td>worcestershire sauce</td>
+    <td>1 tbsp</td>
+  </tr>
+  <tr>
+    <td>lean minced beef</td>
+    <td>500g</td>
+  </tr>
+  <tr>
+    <td>basil leaves</td>
+    <td>handful</td>
+  </tr>
+  <tr>
+    <td>gravy granules</td>
+    <td>1 tbsp</td>
+  </tr>
+  <tr>
+    <td>spaghetti</td>
+    <td>400g</td>
+  </tr>
+</table>
+<img src="wednesday.png" alt="NutrishApp3" width="240" height="200">
+
+<center>Cooking method</center>
+  
+  <p>1.	Heat the oil in a large frying pan and add the onion. Cook gently for a few mins, then add the carrots, courgettes and mushrooms and fry for 5 more mins. Stir in the garlic with 1 min to go.</p>
+  <p>2.	Tip in the tomatoes, Worcestershire sauce and 300ml boiling water, then season to taste. Bring to the boil, cover, then simmer for 15 mins until tender. Meanwhile, heat a non-stick pan and add the mince. Break it up with a wooden spatula and cook for 10 mins, stirring until browned all over</p>
+  <p>3.	Add the basil leaves (reserve a few) to the veg sauce, then put a stick blender into the pan and blend until smooth. Pour the sauce and gravy granules into the mince, then stir to thicken. Cover and simmer for 15 mins.</p>
+  <p>4.	Meanwhile, boil the pasta. Reserve a small cup of the cooking water, then drain. Mix the spaghetti with the sauce and reserved water, then serve, topped with a few more basil leaves.</p>
+</div>
+
+<!-- End smartphone / tablet look -->
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>
